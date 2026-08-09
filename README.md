@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **日本語組版フォーク** — このブランチでは、日本語本文にOpenTypeの `palt` を適用し、句読点・括弧・鉤括弧を自然に詰めて表示します。変更内容、macOSでのビルド方法、上流への追従方法は [README-JP-TYPOGRAPHY.md](README-JP-TYPOGRAPHY.md) を参照してください。
+
 # Writer
 
 Fast and lightweight app for your workspace's markdown files
