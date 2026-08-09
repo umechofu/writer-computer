@@ -131,6 +131,7 @@
   font-size: var(--writer-editor-font-size, 16px);
   line-height: var(--writer-editor-line-height, 1.8);
   letter-spacing: var(--writer-editor-letter-spacing, -0.03em);
+  font-feature-settings: "palt";
   color: var(--text-secondary);
 }
 
@@ -268,4 +269,10 @@
 .cm-editor .cm-tooltip.cm-tooltip-autocomplete > ul,
 .cm-editor .cm-tooltip.cm-tooltip-autocomplete > ul > li {
   font-family: var(--ui-font);
+}
+/* 日本語の自動字詰め（palt）はコード表示に効かせない。
+   等幅フォントの桁揃えが崩れるため。 */
+.cm-editor .cm-fenced-code-line,
+.cm-editor .cm-inline-code {
+  font-feature-settings: normal;
 }
